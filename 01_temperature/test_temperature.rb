@@ -26,6 +26,7 @@ class TestTemperature < MiniTest::Test
     assert_equal 20, ftoc(68)
   end
 
+  time.local
   # Now this set of tests describes a different method,
   # not ftoc() anymore, but ctof().
   def test_ctof_converts_freezing_temperature
