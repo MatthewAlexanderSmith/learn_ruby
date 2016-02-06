@@ -61,6 +61,20 @@ class TestTemperature < MiniTest::Test
   end
 
   # constructing factory methods
+  # A factory method creates an instance of a child class
+  # Hiding the existence of Farenheit and Celcius child classes
+  # Allows you to create 'hidden' classes
+  # Undocumented API
+  # App for Iphone ecosystem
+    #Receive bundle of classes that
+    #Can see source code and documentation
+    #Dev's should only write code that uses documented methods and classes
+    #Hiding is useful if you want to change a class in the future, without effecting other developers
+    #Factory methods will stay the same
+    #Hidden classes might be changed.
+
+    
+
 
   def test_in_celsius
     assert_equal 50, Temperature.in_celsius(50).to_celsius
